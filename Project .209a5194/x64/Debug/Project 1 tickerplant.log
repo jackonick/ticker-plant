@@ -6,15 +6,15 @@ C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(38,19): warning 
 C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(38,19): warning C4244:         ]
 C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(56,22): warning C4244: '=': conversion from 'double' to 'int32_t', possible loss of data
 C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(57,22): warning C4244: '=': conversion from 'double' to 'int32_t', possible loss of data
-C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(103,60): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
-C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(103,60): warning C4244:         with
-C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(103,60): warning C4244:         [
-C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(103,60): warning C4244:             _Ty=int32_t
-C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(103,60): warning C4244:         ]
-C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(103,54): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
-C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(103,54): warning C4244:         with
-C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(103,54): warning C4244:         [
-C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(103,54): warning C4244:             _Ty=int32_t
-C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(103,54): warning C4244:         ]
-C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(109,27): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(122,60): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(122,60): warning C4244:         with
+C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(122,60): warning C4244:         [
+C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(122,60): warning C4244:             _Ty=int32_t
+C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(122,60): warning C4244:         ]
+C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(122,54): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(122,54): warning C4244:         with
+C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(122,54): warning C4244:         [
+C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(122,54): warning C4244:             _Ty=int32_t
+C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(122,54): warning C4244:         ]
+C:\Users\jackl\Desktop\projects\Project 1 tickerplant\Ticks.cpp(128,27): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   Project 1 tickerplant.vcxproj -> C:\Users\jackl\Desktop\projects\Project 1 tickerplant\x64\Debug\Project 1 tickerplant.exe

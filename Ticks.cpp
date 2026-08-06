@@ -7,6 +7,7 @@
 #include <cmath>
 #include <chrono>
 
+
 struct QuoteTick {
     int64_t timestamp_ns;
     int32_t symbol_id;
@@ -63,9 +64,28 @@ QuoteTick createTicks(std::pair<const int32_t, int32_t>& pair, std::mt19937& gen
     return tick;
 }
 
-void writeTicks() {
 
+void writeTicks(std::vector<QuoteTick>& newTicks) {
+    std::ofstream outf("ticks.bin", std::ios::binary);
+
+    if (!outf.is_open()) {
+        std::cerr << "couldnt open ticks.bin \n";
+        return;
+    }
+    for (const auto& t : newTicks) {
+        outf.write(reinterpret_cast<const char*>(&t.timestamp_ns), sizeof(t.timestamp_ns));
+        outf.write(reinterpret_cast<const char*>(&t.symbol_id), sizeof(t.symbol_id));
+        outf.write(reinterpret_cast<const char*>(&t.seq_number), sizeof(t.seq_number));
+        outf.write(reinterpret_cast<const char*>(&t.bid_price), sizeof(t.bid_price));
+        outf.write(reinterpret_cast<const char*>(&t.ask_price), sizeof(t.ask_price));
+        outf.write(reinterpret_cast<const char*>(&t.bid_size), sizeof(t.bid_size));
+        outf.write(reinterpret_cast<const char*>(&t.ask_size), sizeof(t.ask_size));
+        outf.write(reinterpret_cast<const char*>(&t.quote_condition), sizeof(t.quote_condition));
+    }
+    outf.close();
+    
 }
+
 
 std::vector<int32_t> loadIds() {
     std::ifstream file("tickerIds.jack");
@@ -108,7 +128,6 @@ int main() {
         last_prices[id] = p;
     }
 
-  
     for (const auto& pair : last_prices) {
         std::cout << pair.first << " ," << pair.second << "\n";
     }
@@ -136,9 +155,7 @@ int main() {
 
     }
 
-    std::cout << sizeof(QuoteTick);
-
-    writeTicks();
+    writeTicks(newTicks);
 
     return 0;
 }
