@@ -139,11 +139,10 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ReadTicks.cpp" />
-    <ClCompile Include="Ticks.cpp" />
+    <None Include="tickerIds.jack" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="tickerIds.jack" />
+    <ClCompile Include="src\Ticks.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
