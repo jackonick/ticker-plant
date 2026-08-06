@@ -1,1 +1,7 @@
 .vs/ 
+x64/
+*.vcxproj.user
+ticks.bin
+*.obj
+*.pdb
+*.ilk
