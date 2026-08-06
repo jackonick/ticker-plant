@@ -1,0 +1,3 @@
+# ticker-plant
+
+Solo project to learn how real market data infrastructure works from the ground up. This piece generates random tick data using a simplified GBM price walk, derives bid/ask from a spread, and serializes each tick to a fixed-width binary format field by field (no struct padding, no reliance on compiler layout) — basically how a real ticker plant packs a message before sending it out. Right now it writes ticks to a binary file; next step is reusing this same serialization logic to send ticks over UDP between a server and client on my LAN. Part of a longer-term project to eventually feed a live tick stream into an order-matching engine.
